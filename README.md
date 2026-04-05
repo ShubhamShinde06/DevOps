@@ -52,20 +52,31 @@
 
 #### System-level 
 ```bash
-    uname               (which platfrom run)
-    uptime              (start time) 
-    who                 (kon se user ne kab login kiya tha, how many user login this system)   
-    whoami              (only one user retuen )
-    which               (location) 
-    id                  (get user uid | gid)  
-    sudo                (super user do)   
-    cat /etc/passwd     (list of users)   
-    sudo shutdown       (power off)         
+    uname                (which platfrom run)
+    uptime               (start time) 
+    who                  (kon se user ne kab login kiya tha, how many user login this system)   
+    whoami               (only one user retuen )
+    which                (location) 
+    id                   (get user uid | gid)  
+    sudo                 (super user do)   
+    cat /etc/passwd      (list of users)   
+    sudo shutdown        (power off)  
+    sudo apt             (application pakage managner) 
+    sudo apt-get         (download on own system get to internet pkg)  
+    sudo apt-get update  (system update) 
+    sudo apt remove pkg  (delete application/pkg)  
 ```
 
 #### User & Group management
 ```bash
-
+    sudo useradd -m name (addon new user) 
+    sudo passwd name     (create user password)
+    su name              (switch user)
+    sudo userdel name    (delete user)
+    sudo groupadd name (create new group)
+    sudo gpasswd -a username groupname (addon user to groups)
+    sudo gpasswd -M username,username groupname (mutiple user addon one group)
+    sudo groupdel groupname (group delete)
 ```
 
 #### File permission 
