@@ -81,19 +81,25 @@
 
 #### File permission 
 ```bash
-
+  ls -l                     (check folder permission)
+  chmod 777 flodername      (change folder permission)
+  sudo chown username filename  (change ownership)
+  sudo chgrp groupname filename (change groupname )
 ```
 
 #### File Compression
 ```bash
-
+    sudo zip -r ldf.zip flodername (floder make it compression)
+    unzip flodername.zip  (make a file normal)
 ```
 
 #### File transfer
 ```bash
+    scp -i "selected_file_name.pem" "C:\Users\jaywa\Downloads\schema.prisma" ubuntu@ip.compute-1.amazonaws.com:/home/ubuntu (local to server file.floder send)
 
+    scp -i "selected_file_name.pem" -r ubuntu@ip.compute-1.amazonaws.com:/home/ubuntu/devops .
+    (server to local file.floder send)
 ```
-
 
 ---
 
