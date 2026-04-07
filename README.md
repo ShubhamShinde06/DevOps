@@ -12,6 +12,8 @@
 
 - apps -> shell -> kernel -> Hardware (architecture)
 
+- ![My Image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd4RaKP8eP36c_V2FHPq8jEueltHrpd3S2nA&sg "This is a tooltip")
+
 
 **💡 New Terms Learned:**
 | Term | Meaning |
