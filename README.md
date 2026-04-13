@@ -3,6 +3,7 @@
 ## 📋 Table of Contents
 
 - [Linux](#Linux)
+- [Git](#Git)
 
 ---
 
@@ -103,23 +104,88 @@
     (server to local file.floder send)
 ```
 
+#### NetWork
+```bash
+    ping url        (checking you site are run)
+    sudo apt install net-tools
+    netstat 
+    ifconfig 
+    traceroute url
+    mtr             (ping + traceroute)
+    nslookup        (which ip address run)
+    hostname        (this server what ip)
+    iwconfig
+    ss
+    dig url         (this site where hosted)
+    whois url       (in datils showing using domin name)
+    arp             (find mac address)
+    wget            (any download link click and pasted on server)
+    watch -n 2 top           (everey 2s new logs showing)
+    nmap               (check how many port are open)
+```
+
+### PRO
+```bash 
+    haed -n 2 app.log    (in log file number line read)
+    awk '{print}' app.log (in log file number line read)
+    lsblk                 (show disk space)
+     df -h                 (free space showing)
+     create volumn on srevre
+     1.lsblk
+     2. sudo su
+     3. lvm
+     4. pvcreate /dev/nvme1n1 /dev/nvme2n1 /dev/nvme3n1
+     5. pvs
+     6. vgcreate tws-vg /dev/nvme1n1 /dev/nvme2n1
+     7. vgs 
+    pv/vg display  (all info showing)
+```
+
 ---
+
+## Git 
+
+**📌 Key Takeaways:**
+
+
+
+**💡 New Terms Learned:**
+| Term | Meaning |
+|------|---------|
+| GIT   | Tool for version control |
+| GITHUB  | store on cloud  |
+|  |  |
+
+---
+
+### ⌨️ Commands Cheatsheet
+
+```bash 
+    git init (initializes an empty git repository)
+    git status (gives the infomation of the current state of the git respository)
+    git checkout -b branch_name (create a new branch)
+    git restore --staged filename
+    git logs
+    git revert logID
+```
 
 
 
 ## 🛠️ Tools I'm Learning
 
-| Tool                 | Category           | Status         |
-| -------------------- | ------------------ | -------------- |
-| Git                  | Version Control    | ⬜ Not started |
-| Docker               | Containerization   | ⬜ Not started |
-| Kubernetes           | Orchestration      | ⬜ Not started |
-| Jenkins              | CI/CD              | ⬜ Not started |
-| Terraform            | IaC                | ⬜ Not started |
-| Ansible              | Configuration Mgmt | ⬜ Not started |
-| AWS / GCP / Azure    | Cloud              | ⬜ Not started |
-| Prometheus + Grafana | Monitoring         | ⬜ Not started |
-| Linux                | OS                 | 🔄 In Progress |
+| Tool        | Category              | Status        |
+|------------|----------------------|---------------  |
+| Linux      | OS                   | ✅ Done        |
+| Git        | Version Control      | ✅ Done        |
+| Docker     | Containerization     | 🔄 In Progress |
+| Jenkins    | CI/CD                | ⬜ Not started |
+| AWS        | Cloud                | ✅ Done        |
+| Kubernetes | Orchestration        | ⬜ Not started |
+| Terraform  | IaC                  | ⬜ Not started |
+| Ansible    | Config Mgmt          | ⬜ Not started |
+| GitLab     | DevOps Platform      | ⬜ Not started |
+| ArgoCD     | GitOps               | ⬜ Not started |
+| Shell      | Scripting            | ⬜ Not started |
 
 > Update status: ⬜ Not started → 🔄 In Progress → ✅ Done
 
